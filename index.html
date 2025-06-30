@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Study Sphere</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- It links bootstrap's CSS File so we can use Bootstrap's buttons , grids and layouts. -->
+
+    <style>
+
+        body{
+
+            padding-top:20px;
+            font-family: Arial,sans-serif;
+
+        }
+
+        .btn-section .btn{
+
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid #000;
+            background-color: #fff;
+            font-weight: bold;
+        }
+
+        .img-container{
+
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        .img-container img{
+
+            width: 100%;
+            height: auto;
+        }
+
+        .hero{
+
+            padding: 40px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .top-nav{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #333; 
+
+        }
+
+        .circle-btn{
+
+            border-radius: 50%;
+            border: 2px solid #000;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+
+        }
+
+    </style>
+
 </head>
 <body>
-    
+
+    <!-- Navigation -->
+    <div class="top-nav py-2">
+
+        <div class="circle-btn">Lo...</div>
+        <div>
+            <button class="btn btn-outline-dark nav-btn">Features</button>
+            <button class="btn btn-outline-dark nav-btn">How to Start</button>
+            <button class="btn btn-outline-dark nav-btn">About</button>
+            <button class="btn btn-outline-dark nav-btn">Login</button>
+        </div>
+
+    </div>
+
+    <!-- Hero Section -->
+     <!-- Div just below this comment is the Main outside div of the hero section -->
+    <div class="container hero">
+        <!-- This div is the 1st subpart of the hero section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <h4 style="font-size: 70px;">Where Classrooms are Digital and Collaborative</h4>
+
+            </div>
+        </div>
+        <!-- This is the 2nd subpart of the hero section -->
+        <div class="row mt-4 align-items-center">
+
+            <div class="col-md-6 text-center btn-section">
+                <p style="font-size: 35px;" class="mt-3">Create , learn , track and compete all in one place !</p>
+                <button class="btn">Start as Student</button>
+                <button class="btn">Start as Teacher</button>
+            </div>
+
+            <div class="col-md-6">
+                <div class="img-container">
+                    <img src="./public/images/pexels-yankrukov-8199761.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
