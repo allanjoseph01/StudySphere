@@ -1,89 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Sphere</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- It links bootstrap's CSS File so we can use Bootstrap's buttons , grids and layouts. -->
-
-    <style>
-
-        body{
-
-            padding-top:20px;
-            font-family: Arial,sans-serif;
-
-        }
-
-        .btn-section .btn{
-
-            margin: 10px;
-            padding: 10px 20px;
-            border: 2px solid #000;
-            background-color: #fff;
-            font-weight: bold;
-        }
-
-        .img-container{
-
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-
-        }
-
-        .img-container img{
-
-            width: 100%;
-            height: auto;
-        }
-
-        .hero{
-
-            padding: 40px 20px;
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .top-nav{
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            border-bottom: 2px solid #333; 
-
-        }
-
-        .circle-btn{
-
-            border-radius: 50%;
-            border: 2px solid #000;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
+
 <body>
 
     <!-- Navigation -->
     <div class="top-nav py-2">
 
         <div class="circle-btn">Lo...</div>
-        <div>
+
+        <div class="middle-btns">
             <button class="btn btn-outline-dark nav-btn">Features</button>
             <button class="btn btn-outline-dark nav-btn">How to Start</button>
             <button class="btn btn-outline-dark nav-btn">About</button>
+        </div>
+        <div>
+            
             <button class="btn btn-outline-dark nav-btn">Login</button>
         </div>
 
@@ -118,6 +59,84 @@
         </div>
 
     </div>
+
+    <div class="Card-container my-5 text-center">
+
+        <div class="section-title mx-auto mb-4">Features</div>
+        
+        <div class="d-flex align-items-center justify-content-center position-relative">
+
+            <!-- Left Arrow Button -->
+            <button class="btn btn-outline-dark me-2 scroll-btn" onclick="scrollLeftCards()">◀</button>
+
+            <!-- Scrollable Card Container -->
+            <div id="cardScroll" class="d-flex flex-nowrap overflow-auto px-3 scroll-container">
+
+                <!-- Repeatable Cards -->
+                <div class="feature-card me-3" style="min-width: 300px; min-height: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+            </div>
+
+             <!-- Right Arrow Button -->
+            <button class="btn btn-outline-dark ms-2 scroll-btn" onclick="scrollRightCards()">▶</button>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
 
 </body>
 </html>

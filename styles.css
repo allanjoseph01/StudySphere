@@ -1,0 +1,111 @@
+body{
+
+    padding-top:20px;
+    font-family: Arial,sans-serif;
+
+}
+
+.scroll-container::-webkit-scrollbar{
+
+    display: none;
+    
+}
+
+.btn-section .btn{
+    
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+    font-weight: bold;
+
+}
+
+.img-container{
+    
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.img-container img{
+
+    width: 100%;
+    height: auto;
+}
+
+.hero{
+
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.top-nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #333; 
+
+}
+
+.circle-btn{
+
+    border-radius: 50%;
+    border: 2px solid #000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.middle-btns{
+
+    display: flex;
+    gap: 80px;
+}
+
+.feature-card{
+
+    border: 2px solid #888;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-image{
+
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.feature-box{
+
+    border: 2px solid #888;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.section-title{
+
+    text-align: center;
+    border: 2px solid #888;
+    /* display: inline-block; */
+}
