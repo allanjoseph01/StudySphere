@@ -1,7 +1,8 @@
 body{
 
-    padding-top:20px;
-    font-family: Arial,sans-serif;
+    /* padding-top:20px; */
+    /* font-family: Arial,sans-serif; */
+    background-color: #fff6f0;
 
 }
 
@@ -9,6 +10,12 @@ hr{
 
     border: 2px solid black;
 }
+
+/* .scroll-btn{
+
+    background-color: #EE6962;
+    color: white;
+} */
 
 .scroll-container::-webkit-scrollbar{
 
@@ -19,9 +26,8 @@ hr{
 .btn-section .btn{
     
     margin: 10px;
-    padding: 10px 20px;
-    border: 2px solid #000;
-    background-color: #fff;
+    padding: 10px 15px;
+    /* background-color: #FFBE99; */
     font-weight: bold;
 
 }
@@ -47,6 +53,7 @@ hr{
     padding: 40px 20px;
     text-align: center;
     font-weight: bold;
+
 }
 
 .top-nav{
@@ -55,9 +62,56 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    border-bottom: 2px solid #333; 
+    border-bottom: 2px solid #333;
 
 }
+
+.nav-btn{
+
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.nav-btn:hover{
+
+    /* background-color: #EE6962; */
+    color: #EE6962;
+}
+
+
+/* Formatted Buttons Begin  */
+
+.formatted-btn {
+  transition: all 0.3s ease-in-out;
+  /* font-family: "Dosis", sans-serif; */
+}
+
+.formatted-btn {
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+.formatted-btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.formatted-btn:active {
+  opacity: 0.5;
+}
+
+
+/* Formatted Buttons end */
 
 .circle-btn{
 
@@ -111,8 +165,7 @@ hr{
 .section-title{
 
     text-align: center;
-    border: 2px solid #888;
-    /* display: inline-block; */
+    font-size: 30px;
 }
 
 .preferred-c1{
