@@ -2,8 +2,8 @@ body{
 
     /* padding-top:20px; */
     /* font-family: Arial,sans-serif; */
-    background-color: #fff6f0;
-
+    background-color: #ffe0cc;
+    /* margin-bottom: 20px; */
 }
 
 hr{
@@ -63,6 +63,11 @@ hr{
     align-items: center;
     padding: 0 20px;
     border-bottom: 2px solid #333;
+    background-color: #fff6f0;
+    background-color: #ffd6bb;
+    background-color: #ffc9a3;
+    /* background-color: #ffd1b0; */
+
 
 }
 
@@ -89,6 +94,7 @@ hr{
 }
 
 .formatted-btn {
+
   width: 150px;
   height: 60px;
   border-radius: 50px;
@@ -99,15 +105,22 @@ hr{
   border: none;
   font-size: 15px;
   color: white;
+  /* color: black; */
+  /* color: #2c1b0f ; */
+
 }
 
 .formatted-btn:hover {
+
   transform: translateY(3px);
   box-shadow: none;
+
 }
 
 .formatted-btn:active {
+
   opacity: 0.5;
+
 }
 
 
