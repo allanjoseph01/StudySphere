@@ -2,8 +2,8 @@ body{
 
     /* padding-top:20px; */
     /* font-family: Arial,sans-serif; */
-    background-color: #fff6f0;
-
+    /* background-color: #fff6f0; */
+    background: linear-gradient(135deg, #ffd6a5, #fdffb6, #caffbf, #9bf6ff);
 }
 
 hr{
@@ -62,8 +62,12 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    border-bottom: 2px solid #333;
-
+    border: 2px solid #333;
+    background: linear-gradient(135deg, #fca5a5, #fde68a);
+    margin: 20px;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .nav-btn{
