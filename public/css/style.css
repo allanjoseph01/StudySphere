@@ -72,10 +72,11 @@ hr{
 
 .nav-btn{
 
+    all : unset;
     padding: 8px 20px;
     font-size: 20px;
     font-weight: bold;
-
+    cursor: pointer;
 }
 
 .nav-btn:hover{
