@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Sphere</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- It links bootstrap's CSS File so we can use Bootstrap's buttons , grids and layouts. -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="top-nav py-2">
+
+        <div class="circle-btn">Logo</div>
+
+        <div class="middle-btns">
+            <a href="#features" class="btn nav-btn">Features</a>
+            <a href="#howtostart" class="btn nav-btn">How it Works</a>
+            <a href="#about" class="btn nav-btn">About</a>
+        </div>
+        <div>
+            
+            <button class="btn nav-btn">Login</button>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+     <!-- Div just below this comment is the Main outside div of the hero section -->
+    <div class="container hero">
+        <!-- This div is the 1st subpart of the hero section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <h4 style="font-size: 40px;">Where Classrooms are <br> <span style="color: #EE6660;">Digital and Collaborative.</span></h4>
+
+            </div>
+        </div>
+        <!-- This is the 2nd subpart of the hero section -->
+        <div class="row mt-4 align-items-center">
+
+            <div class="col-md-6 text-center btn-section">
+                <p style="font-size: 25px;" class="mt-3">Create, learn, track and compete <br> <span style="color: #EE6660;">all in one place !</span></p>
+                <button class="btn btn-outline-dark formatted-btn">Start as Student</button>
+                <button class="btn btn-outline-dark formatted-btn">Start as Teacher</button>
+            </div>
+
+            <div class="col-md-6">
+                <div class="img-container">
+                    <img src="images/pexels-yankrukov-8199761.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Card-container my-5 text-center">
+
+        <hr>
+
+        <div class="section-title mx-auto mb-4">Features</div>
+        
+        <div class="d-flex align-items-center justify-content-center position-relative">
+
+            <!-- Left Arrow Button -->
+            <button style="font-size: 30px;" class="bi bi-arrow-left formatted-btn" onclick="scrollLeftCards()"></button>
+
+            <!-- Scrollable Card Container -->
+            <div id="cardScroll" class="d-flex flex-nowrap overflow-auto px-3 scroll-container">
+
+                <!-- Repeatable Cards -->
+                <div class="feature-card me-3" style="min-width: 300px; min-height: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+                <div class="feature-card me-3" style="min-width: 300px;">
+                    <div class="feature-image"> <span>X</span> </div>
+                    <div class="feature-box">Feature Name</div>
+                    <div class="feature-box">Feature Description</div>
+                </div>
+
+            </div>
+
+             <!-- Right Arrow Button -->
+            <button style="font-size: 30px;" class="bi bi-arrow-right formatted-btn" onclick="scrollRightCards()"></button>
+
+        </div>
+
+    </div>
+
+    
+
+    <div class="preferred-guide-flow">
+
+        <div class="preferred-c1">
+
+            <div style="font-size: 40px;">How it works</div>
+            <div style="font-size: 40px;">See the Process according to your preferred role</div>
+            <div>
+                <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn">Teacher</button>
+                <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn">Student</button>
+            </div>
+
+        </div>
+
+        <div class="guide-flow mt-5">
+
+            <div>
+                <div class="gf-circle-div"></div>
+                <div class="mt-3">Explanation 1</div>
+            </div>
+            
+            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+            <div>
+                <div class="gf-circle-div"></div>
+                <div class="mt-3">Explanation 2</div>
+            </div>
+
+            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+            <div>
+                <div class="gf-circle-div"></div>
+                <div class="mt-3">Explanation 3</div>
+            </div>
+
+            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+            <div>
+                <div class="gf-circle-div"></div>
+                <div class="mt-3">Explanation 4</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="about-us">
+
+        <div style="font-size: 40px;" class="d-flex justify-content-center align-items-center mt-3">About Us</div>
+
+        <div class="info d-flex align-items-center justify-content-center mt-3">
+
+            <div>
+                <div class="au-img-container"><img src="images/trial-image-person.jpg" alt=""></div>
+                <div class="Name">Manas Shukla</div>
+                <div class="p1-description">Student</div>
+            </div>
+            <div>
+                <div class="au-img-container"><img src="images/trial-image-person.jpg" alt=""></div>
+                <div class="Name">Shivam Singla</div>
+                <div class="p1-description">Student</div>
+            </div>
+            <div>
+                <div class="au-img-container"><img src="images/trial-image-person.jpg" alt=""></div>
+                <div class="Name">Allan Santosh Joseph</div>
+                <div class="p1-description">Student</div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
