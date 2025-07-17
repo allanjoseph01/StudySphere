@@ -1,38 +1,36 @@
 body{
 
-    /* padding-top:20px; */
-    /* font-family: Arial,sans-serif; */
-<<<<<<< HEAD:styles.css
-    background-color: #ffe0cc;
-    /* margin-bottom: 20px; */
-=======
-    /* background-color: #fff6f0; */
-    background: linear-gradient(135deg, #ffd6a5, #fdffb6, #caffbf, #9bf6ff);
->>>>>>> upstream/main:public/css/style.css
+    background-color: #0E3128;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-and-guide-section{
+
+    background-color: white;
+
 }
 
 hr{
 
-    border: 2px solid black;
+    border: 2px solid ;
 }
-
-/* .scroll-btn{
-
-    background-color: #EE6962;
-    color: white;
-} */
 
 .scroll-container::-webkit-scrollbar{
 
     display: none;
+    height: 400px;
     
 }
+
+/* .scroll-container{
+
+    height: 400px;
+} */
 
 .btn-section .btn{
     
     margin: 10px;
     padding: 10px 15px;
-    /* background-color: #FFBE99; */
     font-weight: bold;
 
 }
@@ -51,14 +49,18 @@ hr{
 
     width: 100%;
     height: auto;
+
 }
 
 .hero{
 
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     text-align: center;
     font-weight: bold;
-
+    background-color: #0E3128;
+    width: 100%;
+    color: white;
+    
 }
 
 .top-nav{
@@ -67,59 +69,61 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-<<<<<<< HEAD:styles.css
-    border-bottom: 2px solid #333;
-    background-color: #fff6f0;
-    background-color: #ffd6bb;
-    background-color: #ffc9a3;
-    /* background-color: #ffd1b0; */
-
-
-=======
     border: 2px solid #333;
-    background: linear-gradient(135deg, #fca5a5, #fde68a);
+    background-color: white;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 50px;
     position: sticky;
     top: 0;
->>>>>>> upstream/main:public/css/style.css
+    z-index: 1000;
+
 }
 
 .nav-btn{
 
-    all : unset;
-    padding: 8px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+    font-size: 25px;
+    color: #1c3a33;
+
 }
 
 .nav-btn:hover{
 
-    /* background-color: #EE6962; */
-    color: #EE6962;
+    color: black;
 }
 
+.login-btn{
+
+    background-color: #C5F255;
+    border-radius: 50px;
+    width: 150px;
+
+}
+
+.login-btn:hover{
+
+    background-color: black;
+    color: white;
+}
 
 /* Formatted Buttons Begin  */
 
 .formatted-btn {
-  transition: all 0.3s ease-in-out;
-  /* font-family: "Dosis", sans-serif; */
+
+    transition: all 0.3s ease-in-out;
+
 }
 
 .formatted-btn {
 
-  width: 150px;
+  width: 250px;
   height: 60px;
   border-radius: 50px;
-  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
-  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  background-color: #C5F255;
   outline: none;
   cursor: pointer;
   border: none;
-  font-size: 15px;
-  color: white;
+  font-size: 20px;
+  color: black;
   /* color: black; */
   /* color: #2c1b0f ; */
 
@@ -129,6 +133,8 @@ hr{
 
   transform: translateY(3px);
   box-shadow: none;
+  background-color: white;
+  color: black;
 
 }
 
@@ -160,24 +166,46 @@ hr{
     gap: 80px;
 }
 
+.Card-container{
+
+    background-color: white;
+    background-color: #F3F5F4;
+
+}
+
 .feature-card{
 
     border: 2px solid #888;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    &:hover {
+
+        transform: scale(1.03);
+        
+    }
+
+    background: linear-gradient(to bottom right, #fcf6bd, #d0f4de);
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+
 }
 
 .feature-image{
 
     width: 100%;
-    height: 40px;
-    background-color: #ccc;
-    margin-bottom: 15px;
+    height: 70px;
+    /* background-color: #ccc; */
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 50px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    color: #333;
     
 }
 
@@ -190,10 +218,17 @@ hr{
 
 }
 
+.description{
+
+    border: none;
+
+}
+
 .section-title{
 
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+
 }
 
 .preferred-c1{
@@ -203,17 +238,23 @@ hr{
     gap: 20px;
     text-align: center;
     width: 100%;
+    margin-bottom: 0px;
+    
 }
 
 .gf-circle-div{
 
-    /* background-color: black; */
     height: 100px;
     width: 100px;
     border: 2px solid black;
     border-radius: 50%;
 
 }
+
+/* .preferred-guide-flow{
+
+    background-color: white;
+} */
 
 .guide-flow{
 
@@ -237,6 +278,7 @@ hr{
 .info{
 
     gap: 100px;
+
 }
 
 .Name{
@@ -252,4 +294,19 @@ hr{
     font-size: 30px;
     text-align: center;
     
+}
+
+.about-us{
+
+    
+    color: black;
+    background-color: white;
+
+}
+
+.guide-teacher-student:hover{
+
+    background-color: black;
+    color: white;
+
 }

@@ -9,6 +9,7 @@
     <!-- It links bootstrap's CSS File so we can use Bootstrap's buttons , grids and layouts. -->
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
 </head>
 
@@ -26,19 +27,19 @@
         </div>
         <div>
             
-            <button class="btn nav-btn">Login</button>
+            <button class="btn nav-btn login-btn">Login</button>
         </div>
 
     </nav>
 
     <!-- Hero Section -->
      <!-- Div just below this comment is the Main outside div of the hero section -->
-    <div class="container hero">
+    <div class="container hero ">
         <!-- This div is the 1st subpart of the hero section -->
         <div class="row justify-content-center">
             <div class="col-md-8">
 
-                <h4 style="font-size: 40px;">Where Classrooms are <br> <span style="color: #EE6660;">Digital and Collaborative.</span></h4>
+                <h4 style="font-size: 40px;">Where Classrooms are <br> <span style="color: #FFCF56;">Digital and Collaborative.</span></h4>
 
             </div>
         </div>
@@ -46,9 +47,9 @@
         <div class="row mt-4 align-items-center">
 
             <div class="col-md-6 text-center btn-section">
-                <p style="font-size: 25px;" class="mt-3">Create, learn, track and compete <br> <span style="color: #EE6660;">all in one place !</span></p>
-                <button class="btn btn-outline-dark formatted-btn">Start as Student</button>
-                <button class="btn btn-outline-dark formatted-btn">Start as Teacher</button>
+                <p style="font-size: 25px;" class="mt-3">Create, learn, track and compete <br> <span style="color: #FFCF56;">all in one place !</span></p>
+                <button class="btn btn-outline-dark formatted-btn hero-section-btn">Start as Student</button>
+                <button class="btn btn-outline-dark formatted-btn hero-section-btn">Start as Teacher</button>
             </div>
 
             <div class="col-md-6">
@@ -61,136 +62,124 @@
 
     </div>
 
-    <div class="Card-container my-5 text-center">
+    <div class="card-and-guide-section">
 
-        <hr>
+            <div class="Card-container my-5 text-center">
 
-        <div class="section-title mx-auto mb-4">Features</div>
-        
-        <div class="d-flex align-items-center justify-content-center position-relative">
+                <div class="section-title mx-auto mb-4">Features</div>
+                
+                <div class="d-flex align-items-center justify-content-center position-relative">
 
-            <!-- Left Arrow Button -->
-            <button style="font-size: 30px;" class="bi bi-arrow-left formatted-btn" onclick="scrollLeftCards()"></button>
+                    <!-- Left Arrow Button -->
+                    <button style="font-size: 30px;" class="bi bi-arrow-left formatted-btn" onclick="scrollLeftCards()"></button>
 
-            <!-- Scrollable Card Container -->
-            <div id="cardScroll" class="d-flex flex-nowrap overflow-auto px-3 scroll-container">
+                    <!-- Scrollable Card Container -->
+                    <div id="cardScroll" class="d-flex flex-nowrap overflow-auto px-3 scroll-container">
 
-                <!-- Repeatable Cards -->
-                <div class="feature-card me-3" style="min-width: 300px; min-height: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <!-- Repeatable Cards -->
+                        <div class="feature-card me-3" style="min-width: 300px; min-height: 300px;">
+                            <div class="feature-image bi-person-check"></div>
+                            <div class="feature-box">Sign In as Teacher or Student</div>
+                            <div class="feature-box description">Allows Users to register and access the platform based on their role - Teacher or Student</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-plus-square"></div>
+                            <div class="feature-box">Create and Join ClassRooms</div>
+                            <div class="feature-box description">Teachers can create subject specific classrooms while students can join them using a code or invite.</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-list-check"></div>
+                            <div class="feature-box description">Assign and Complete Tasks</div>
+                            <div class="feature-box">Teachers can assign task, and students can mark them as completed in their to-do list.</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-graph-up-arrow"></div>
+                            <div class="feature-box">Track Student Progress</div>
+                            <div class="feature-box">Teachers can monitor each student's task completion status and progress over time.</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-trophy"></div>
+                            <div class="feature-box">Leaderboard System</div>
+                            <div class="feature-box">Displays a leaderboard based on task completion to encourage healthy competition among Students.</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-folder-symlink"></div>
+                            <div class="feature-box">Resource Sharing</div>
+                            <div class="feature-box">Teachers and Students can share study materials, notes, and links within classrooms</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                        <div class="feature-card me-3" style="min-width: 300px;">
+                            <div class="feature-image bi-chat-left-dots"></div>
+                            <div class="feature-box">Student Feedback</div>
+                            <div class="feature-box">Students can submit their feedback to Teachers about Lessons, tasks, or the overall classroom experince.</div>
+                        </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
-                </div>
+                    </div>
 
-                <div class="feature-card me-3" style="min-width: 300px;">
-                    <div class="feature-image"> <span>X</span> </div>
-                    <div class="feature-box">Feature Name</div>
-                    <div class="feature-box">Feature Description</div>
+                    <!-- Right Arrow Button -->
+                    <button style="font-size: 30px;" class="bi bi-arrow-right formatted-btn" onclick="scrollRightCards()"></button>
+
                 </div>
 
             </div>
-
-             <!-- Right Arrow Button -->
-            <button style="font-size: 30px;" class="bi bi-arrow-right formatted-btn" onclick="scrollRightCards()"></button>
-
-        </div>
-
-    </div>
 
     
 
-    <div class="preferred-guide-flow">
+            <div class="preferred-guide-flow">
 
-        <div class="preferred-c1">
+                <div class="preferred-c1">
 
-            <div style="font-size: 40px;">How it works</div>
-            <div style="font-size: 40px;">See the Process according to your preferred role</div>
-            <div>
-                <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn">Teacher</button>
-                <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn">Student</button>
+                    <div style="font-size: 40px;">How it works</div>
+                    <div style="font-size: 40px;">See the Process according to your preferred role</div>
+                    <div>
+                        <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn guide-teacher-student">Teacher</button>
+                        <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn guide-teacher-student">Student</button>
+                    </div>
+
+                </div>
+
+                <div class="guide-flow mt-5">
+
+                    <div>
+                        <div class="gf-circle-div"></div>
+                        <div class="mt-3">Explanation 1</div>
+                    </div>
+                    
+                    <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+                    <div>
+                        <div class="gf-circle-div"></div>
+                        <div class="mt-3">Explanation 2</div>
+                    </div>
+
+                    <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+                    <div>
+                        <div class="gf-circle-div"></div>
+                        <div class="mt-3">Explanation 3</div>
+                    </div>
+
+                    <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
+
+                    <div>
+                        <div class="gf-circle-div"></div>
+                        <div class="mt-3">Explanation 4</div>
+                    </div>
+
+                </div>
+
             </div>
-
-        </div>
-
-        <div class="guide-flow mt-5">
-
-            <div>
-                <div class="gf-circle-div"></div>
-                <div class="mt-3">Explanation 1</div>
-            </div>
-            
-            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
-
-            <div>
-                <div class="gf-circle-div"></div>
-                <div class="mt-3">Explanation 2</div>
-            </div>
-
-            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
-
-            <div>
-                <div class="gf-circle-div"></div>
-                <div class="mt-3">Explanation 3</div>
-            </div>
-
-            <div style="font-size: 50px; margin-bottom: 40px;" class="arrow">→</div>
-
-            <div>
-                <div class="gf-circle-div"></div>
-                <div class="mt-3">Explanation 4</div>
-            </div>
-
-        </div>
 
     </div>
 
-    <hr>
-
     <div class="about-us">
 
-        <div style="font-size: 40px;" class="d-flex justify-content-center align-items-center mt-3">About Us</div>
+        <div style="font-size: 40px;" class="d-flex justify-content-center align-items-center">About Us</div>
 
         <div class="info d-flex align-items-center justify-content-center mt-3">
 
