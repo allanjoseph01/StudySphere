@@ -2,11 +2,18 @@ body{
 
     background-color: #0E3128;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .card-and-guide-section{
 
     background-color: white;
+
+}
+
+.Card-container{
+
+    padding-top: 30px;
 
 }
 
@@ -60,6 +67,7 @@ hr{
     background-color: #0E3128;
     width: 100%;
     color: white;
+    margin-bottom: 30px;
     
 }
 
@@ -81,7 +89,7 @@ hr{
 
 .nav-btn{
 
-    font-size: 25px;
+    font-size: 22px;
     color: #1c3a33;
 
 }
@@ -89,6 +97,13 @@ hr{
 .nav-btn:hover{
 
     color: black;
+}
+
+.nav-bar-logo-img{
+
+    height: 50px;
+    width: 50px;    
+    
 }
 
 .login-btn{
@@ -168,7 +183,7 @@ hr{
 
 .Card-container{
 
-    background-color: white;
+
     background-color: #F3F5F4;
 
 }
@@ -242,19 +257,11 @@ hr{
     
 }
 
-.gf-circle-div{
+.preferred-guide-flow{
 
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    border-radius: 50%;
+    margin-bottom: 20px;
 
 }
-
-/* .preferred-guide-flow{
-
-    background-color: white;
-} */
 
 .guide-flow{
 
@@ -301,6 +308,8 @@ hr{
     
     color: black;
     background-color: white;
+    background-color: #F3F5F4;
+    padding-top: 30px;
 
 }
 
@@ -309,4 +318,52 @@ hr{
     background-color: black;
     color: white;
 
+}
+
+.workflow-container{
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrow{
+
+    font-size: 70px;
+
+}
+
+.gf-circle-div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #3a594a, #2e533f, #a5e933);
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    color: white;
+
+}
+
+.step-title{
+
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.step{
+
+    text-align: center;
+    align-items: center;
+    
 }
