@@ -25,3 +25,24 @@ function scrollRightCards(){
     
     
 }
+
+function showWorkFlow(role){
+
+    const teacherDiv = document.getElementById('teacherWorkflow');
+    const studentDiv = document.getElementById('studentWorkflow');
+
+    if(role === 'teacher'){
+        
+        teacherDiv.style.display = 'flex';
+        studentDiv.style.display = 'none';
+
+    }
+
+    else if(role === 'student'){
+
+        teacherDiv.style.display = 'none';
+        studentDiv.style.display = 'flex';
+
+    }
+
+}
