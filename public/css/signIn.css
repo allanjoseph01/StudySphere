@@ -1,124 +1,145 @@
-body{
+body {
 
-    margin: 0;
-    padding: 0;
     font-family: 'Poppins';
-    background: #f0f0f0;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.outerContainer{
+
+    background-image: url(../images/backgroundImageLightGreenForLoginPage.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
+
 
 .container{
 
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 320px;
+    display: flex;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    /* margin-top: 50px; */
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.leftSide,
+.rightSide{
+
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
     
 }
 
-.form-box h2{
+.leftSide{
+
+    
+    padding: 20px;
+}
+
+.rightSide{
+
+    object-fit: cover;
+    background: linear-gradient(to bottom right, #e9f7ef, #d4edda, #a8df8e);
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 29px;
+
+}
+
+
+.form-box{
+
+    margin-left: 0px;
+
+}
+
+h2{
+
+    font-size: 40px;
+    text-align: center;
+}
+
+.welcome{
 
     text-align: center;
-    color: #1a6812;
-    position: relative;
-    /* margin-bottom: 20px; */
-
 }
 
-.underline{
+.forgotPassword{
 
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #1a6812;
-    margin: 5px auto 0;
-
+    font-size: 13px;
+    margin-top: 2px;
 }
+
+label{
+
+    font-size: 15px;
+}
+
 
 input{
 
     display: block;
-    width: 90%;
-    padding: 12px;
-    margin: 15px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-
-}
-
-.email-input{
-
-    margin-top: 50px;
-
-}
-
-.forgot-password{
-
+    margin-top: 5px;
     font-size: 13px;
-    color: #555;
+    width: 350px;
+    border-radius: 3px;
 
 }
 
-.forgot-password a{
 
-    color: #1a6812;
-    text-decoration: none;
-    font-weight: 600;
+.inputContents2{
 
-}
-
-.buttons{
-
-    display: flex;
-    justify-content: space-around;
-    margin-top: 55px;
-
-}
-
-button{
-
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-
-}
-
-.hidden {
-
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    visibility: hidden;
-    transition: opacity 0.4s ease;
+    margin-top: 10px;
     
 }
 
-.name-input{
+.loginBtn{
 
-    margin-top: 50px;
+    border: 2px solid black;
+    font-size: 20px;
+    width: 350px;
+    /* text-align: center; */
+}
+
+
+
+
+img{
+
+   /* width: 640px;
+   height: 550px; */
+   /* margin-top: 50px; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* border-radius: 30px; */
 
 }
 
-.form-box{
+.redirectSignUp{
 
-    opacity: 1;
-    transition: opacity 0.4s ease;
-    
-
-}
-
-.form-box.hidden {
-
-    opacity: 0;
-    pointer-events: none;
-    
-
+    margin-left: 48px;
+    margin-top: 20px;
+    width: 260px;
 }
