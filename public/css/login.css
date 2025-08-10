@@ -37,31 +37,30 @@ html, body {
     /* margin-top: 50px; */
     border-radius: 30px;
     padding: 0;
-    margin-left: 10px;
+    margin: 0;
 }
 
 .leftSide,
 .rightSide{
 
-    width: 70%;
+    width: 50%;
     height: 100%;
     /* border: 2px solid black; */
     
 }
 
 .leftSide{
-
+    
+    margin-top: 20px;
     padding: 20px;
-    margin-top: 0px;
-
 }
 
 .rightSide{
 
     object-fit: cover;
     background: linear-gradient(to bottom right, #e9f7ef, #d4edda, #a8df8e);
+    margin: 0;
     padding: 0;
-    /* margin-left: 100px; */
     border-top-right-radius: 29px;
     border-bottom-right-radius: 29px;
 
@@ -71,7 +70,6 @@ html, body {
 .form-box{
 
     margin-left: 0px;
-    margin-top: 0;
 
 }
 
@@ -79,15 +77,11 @@ h2{
 
     font-size: 40px;
     text-align: center;
-    margin-bottom: 10px;
 }
-
-
 
 .welcome{
 
     text-align: center;
-    margin-top: 0;
 }
 
 .forgotPassword{
@@ -101,12 +95,6 @@ label{
     font-size: 15px;
 }
 
-.userInfo{
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
 input{
 
@@ -118,15 +106,19 @@ input{
 
 }
 
-.signUpBtn{
+
+.inputContents2{
+
+    margin-top: 10px;
+    
+}
+
+.loginBtn{
 
     border: 2px solid black;
     font-size: 20px;
     width: 350px;
-    background-color: #198754;
-    color: white;
-    border-radius: 4px;
-
+    /* text-align: center; */
 }
 
 
@@ -145,8 +137,9 @@ img{
 
 }
 
-.selectRole{
+.redirectSignUp{
 
-    margin-top: 10px;
+    margin-left: 48px;
+    margin-top: 20px;
+    width: 260px;
 }
-
