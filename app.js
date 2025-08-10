@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require('path');
+const cookieParser = require('cookie-parser');
 
 const mongConnect = require('./config/mongoose-connection');
 const teacherRoutes = require("./routes/teacherRoutes");

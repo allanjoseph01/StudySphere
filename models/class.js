@@ -28,7 +28,11 @@ const classroomSchema = mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "assignment"
         }
-    ]
+    ],
+    photo : {
+        type : String,
+        default : "classDefault.png"
+    }
 }, {
     timestamps: true
 });
