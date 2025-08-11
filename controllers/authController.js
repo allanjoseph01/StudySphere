@@ -32,7 +32,7 @@ module.exports.signIn = async function(req,res){
   const {email , password} = req.body;
   let user = await userModel.findOne({email})
   if(!user){
-    return res.status(500).send("Something went wrong!");
+    res.redirect('/signUp');
   }
   
   bcrypt.compare(password,user.password,function(err,result){
@@ -41,7 +41,7 @@ module.exports.signIn = async function(req,res){
       res.cookie("token", token);
       res.status(200).redirect("/profile");
     }else{
-      res.redirect('/signUp');
+      return res.status(500).send("Something went wrong!");
     }
   });
 }

@@ -13,7 +13,7 @@ router.get('/signIn',function(req,res){
   res.render('signIn');
 });
 
-router.post('/logout',logout);
+router.get('/logout',logout);
 
 router.post('/forgot',forgotPassword);
 
