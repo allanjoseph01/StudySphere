@@ -1,10 +1,13 @@
+
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
-const userModel= require('../models/user');
+const userModel = require('../models/user');
 const tokenGenerator = require('../utils/generateToken');
 
 module.exports.signUp = async function(req,res){
-  const {username, name , email , password , role} = req.body;
+  // console.log(req.body);
+  const {name, username , password , email , role} = req.body;
+  // console.log(name,username,password,email,role);
   let user = await userModel.findOne({email})
   if(user){
     return res.status(500).send("user already registered");
@@ -18,10 +21,9 @@ module.exports.signUp = async function(req,res){
         name,
         password : hash
       });
-      
       let token = tokenGenerator(user);
       res.cookie("token", token);
-      res.send("registered");
+      res.redirect('/');
     });
   })
 }
@@ -46,7 +48,7 @@ module.exports.signIn = async function(req,res){
 
 module.exports.logout = function(req,res){
   res.cookie("token","");
-  res.redirect('/signIn');
+  res.redirect('/');
 };
 
 module.exports.forgotPassword = async function(req,res){
@@ -56,7 +58,7 @@ module.exports.forgotPassword = async function(req,res){
     return res.status(500).send("Something went wrong!");
   }
   bcrypt.genSalt(10,(err,salt)=>{
-    bcrypt.hash(password,salt,async (err,hash)=>{
+    bcrypt.hash(newPassword,salt,async (err,hash)=>{
       user.password = hash;
       await user.save();
       res.redirect('/signIn');

@@ -37,4 +37,4 @@ const classroomSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = classroomSchema;
+module.exports = mongoose.model('class', classroomSchema);

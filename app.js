@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require('dotenv').config(); 
 const path = require('path');
 const cookieParser = require('cookie-parser');
 
@@ -7,7 +8,6 @@ const mongConnect = require('./config/mongoose-connection');
 const teacherRoutes = require("./routes/teacherRoutes");
 const studentRoutes = require("./routes/studentRoutes");
 const authRoutes = require("./routes/authRoutes");
-require('dotenv').config();
 
 
 app.set('view engine' , 'ejs');

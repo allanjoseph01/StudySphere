@@ -30,4 +30,4 @@ const assignmentSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = assignmentSchema;
+module.exports = mongoose.model('assignment', assignmentSchema);

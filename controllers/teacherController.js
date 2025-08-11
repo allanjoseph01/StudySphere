@@ -29,11 +29,32 @@ module.exports.createClass = async function(req, res) {
   }
 };
 
-module.exports.uploadassignment = function(req,res){
+module.exports.uploadassignment = async function(req, res) {
   try {
-    const {title , description , due_date , classroom} = req.body;
+    const { title, description, due_date, classroom } = req.body;
     const teacherId = req.user.userid;
-  } catch (error) {
-    
+
+    // Check if classroom exists and belongs to teacher
+    const classroomDoc = await classModel.findOne({ _id: classroom, teacher: teacherId });
+    if (!classroomDoc) {
+      return res.status(404).json({ error: 'Classroom not found or not authorized' });
+    }
+
+    // Create assignment
+    const assignment = await assignmentModel.create({
+      title,
+      description,
+      due_date,
+      classroom,
+      uploadedBy: teacherId
+    });
+
+    // Push assignment to classroom's assignments array
+    classroomDoc.assignments.push(assignment._id);
+    await classroomDoc.save();
+
+    res.status(201).json({ message: 'Assignment uploaded successfully', assignment });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 };
