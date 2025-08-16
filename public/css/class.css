@@ -1,0 +1,71 @@
+body {
+
+    font-family: 'Inter', sans-serif;
+    background-color: #0E3128; /* Deep green theme color */
+    color: #f8f9fa; /* Light text for contrast */
+
+}
+
+.navbar {
+
+    background-color: #ffffff; /* White navbar background */
+
+}
+
+.navbar-brand, .nav-link {
+
+    color: #212529; /* Dark text for navbar elements on white background */
+
+}
+
+.navbar-brand:hover, .nav-link:hover {
+
+    color: #0E3128; /* Dark green on hover */
+
+}
+
+.card {
+
+    border-radius: 0.5rem;
+
+}
+
+.card-body {
+
+    background-color: #ffffff;
+    color: #212529;
+
+}
+
+.primary-text-color {
+
+    color: #0E3128; /* Primary accent color for icons and key text */
+
+}
+
+.dropdown-menu {
+
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+
+}
+
+.dropdown-item:hover {
+
+    background-color: #e9ecef;
+
+}
+
+.rounded-circle-logo {
+
+    border-radius: 50%; /* Ensuring the logo is perfectly circular */
+
+}
+
+/* Custom height for leaderboard to match row height */
+.leaderboard-h-lg {
+
+    min-height: calc(100% + 1.5rem); /* Adjust based on row gutter for alignment */
+
+}

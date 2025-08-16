@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/signIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="outerContainer">
+
+        <div class="container">
+
+            <div class="leftSide">
+                <form action="" class="form-box" id="signin-form">
+
+                    <h2>Sign Up<span class="underline"></span></h2>
+                    <p class="welcome">We just need a few details!</p>
+                
+                    <div class="userInfo">
+                        <div class="inputContents">
+                            <label for="">Name</label>
+                            <input class="name-input" type="text" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="inputContents">
+                            <label for="">Username</label>
+                            <input class="name-input" type="text" pattern="[A-Za-z0-9]+" placeholder="Enter your Username" required>
+                        </div>
+                        <div class="inputContents">
+                            <label for="">Password</label>
+                            <input class="password-input" type="password" placeholder="Enter your Password" required>
+                        </div>
+                        <div class="inputContents">
+                            <label for="">Email</label>
+                            <input class="email-input" type="email" placeholder="Enter your Email" required>
+                        </div>
+                    </div>
+                    <div class="selectRole">
+                        <select name="" id="">
+                            <option value="select">Select Role</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="teacher">Student</option>
+                        </select>
+                    </div>
+                    
+
+                    <p class="forgotPassword">Forgot Password <a href="">Click Here !</a></p>
+
+                    <div class="buttons">
+
+                        <button class="btn btn-success border-dark signUpBtn">Sign Up</button>
+
+                    </div>
+                </form>
+                
+            </div>
+
+            <div class="rightSide">
+
+               <img src="../images/singleStudentImageLoginPage-removebg-.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
