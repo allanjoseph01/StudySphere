@@ -22,6 +22,7 @@ module.exports.signUp = async function(req,res){
         password : hash
       });
       let token = tokenGenerator(user);
+      console.log(token);
       res.cookie("token", token);
       res.redirect('/');
     });
@@ -39,7 +40,7 @@ module.exports.signIn = async function(req,res){
     if(result){
       let token = tokenGenerator(user);
       res.cookie("token", token);
-      res.status(200).redirect("/profile");
+      res.status(200).redirect("/");
     }else{
       return res.status(500).send("Something went wrong!");
     }

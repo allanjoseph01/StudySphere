@@ -33,9 +33,17 @@
             <a href="#howtostart" class="btn nav-btn">How it Works</a>
             <a href="#about" class="btn nav-btn">About</a>
         </div>
-        <div>
-            
-           <a href="/signIn" class="btn nav-btn login-btn">Login</a>
+        <div class="userMenu">
+            <% if(user){ %>
+                <button class="bi bi-person personIcon"></button>
+                <div class="dropdown">
+                    <a href="">Profile</a>
+                    <a href="">ClassRooms</a>
+                    <a href="/logout">Log Out</a>
+                </div>
+            <% } else { %>
+                <a href="/signIn" class="btn nav-btn login-btn">Login</a>
+            <% } %>
         </div>
 
     </nav>
@@ -133,90 +141,59 @@
                 </div>
 
             </div>
-
-    
-
             <div class="preferred-guide-flow">
-
                 <div class="preferred-c1">
-
-                    <div style="font-size: 40px;">How it works</div>
-                    <div style="font-size: 40px;">See the Process according to your preferred role</div>
+                    <div>How it works</div>
+                    <div>See the Process according to your preferred role</div>
                     <div>
-                        <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn guide-teacher-student" onclick="showWorkFlow('teacher')">Teacher</button>
-                        <button style="font-size: 25px;" class="btn btn-outline-dark formatted-btn guide-teacher-student" onclick="showWorkFlow('student')">Student</button>
+                        <button class="btn formatted-btn guide-teacher-student active" onclick="showWorkFlow('teacher')">Teacher</button>
+                        <button class="btn formatted-btn guide-teacher-student" onclick="showWorkFlow('student')">Student</button>
                     </div>
-
                 </div>
-
                 <div class="workflow-container mt-5">
-
-                    <div id="teacherWorkflow" style="display: none;">
-                        <div class="guide-flow">
-                            
-                            <div>
-                                <div class="gf-circle-div">Create classroom info</div>
-                                <div class="step-title mt-3">Create Classroom</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Upload videos, PDFs, etc.</div>
-                                <div class="step-title mt-3">Upload Resources</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Assign tasks with deadlines</div>
-                                <div class="step-title mt-3">Assign Tasks</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Monitor progress charts</div>
-                                <div class="step-title mt-3">Track Progress</div>
-                            </div>
+                    <div id="teacherWorkflow" class="workflow-steps">
+                        <div class="step">
+                            <div class="gf-circle-div">Create classroom info</div>
+                            <div class="step-title mt-2">Create Classroom</div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Upload videos, PDFs, etc.</div>
+                            <div class="step-title mt-2">Upload Resources</div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Assign tasks with deadlines</div>
+                            <div class="step-title mt-2">Assign Tasks</div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Monitor progress charts</div>
+                            <div class="step-title mt-2">Track Progress</div>
                         </div>
                     </div>
-
-                    <div id="studentWorkflow" style="display: none;">
-
-                        <div class="guide-flow">
-                            <div>
-                                <div class="gf-circle-div">Choose subjects of interest</div>
-                                <div class="step-title mt-3">Select Interests</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Find & join classrooms</div>
-                                <div class="step-title mt-3">Join Classroom</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Access videos and resources</div>
-                                <div class="step-title mt-3">Access Resources</div>
-                            </div>
-
-                            <div class="arrow">→</div>
-
-                            <div>
-                                <div class="gf-circle-div">Complete tasks & compete</div>
-                                <div class="step-title mt-3">Complete Tasks</div>
-                            </div>
-
+                    <div id="studentWorkflow" class="workflow-steps" style="display: none;">
+                        <div class="step">
+                            <div class="gf-circle-div">Choose subjects of interest</div>
+                            <div class="step-title mt-2">Select Interests</div>
                         </div>
-                        
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Find & join classrooms</div>
+                            <div class="step-title mt-2">Join Classroom</div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Access videos and resources</div>
+                            <div class="step-title mt-2">Access Resources</div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="step">
+                            <div class="gf-circle-div">Complete tasks & compete</div>
+                            <div class="step-title mt-2">Complete Tasks</div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
 
     

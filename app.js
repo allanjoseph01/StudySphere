@@ -3,6 +3,8 @@ const app = express();
 require('dotenv').config(); 
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const jwt = require('jsonwebtoken');
+const secretkey = process.env.JWT_SECRET;
 
 const mongConnect = require('./config/mongoose-connection');
 const teacherRoutes = require("./routes/teacherRoutes");
@@ -20,7 +22,18 @@ app.use("/student",studentRoutes);
 app.use("/",authRoutes);
 
 app.get('/',function(req,res){
-  res.render('index');
+  let user = null;
+  const token = req.cookies.token;
+  if (token) {
+      try {
+          const data = jwt.verify(token, secretkey);
+          user = data;
+      } catch (error) {
+          res.clearCookie('token');
+      }
+  }
+  res.render('index', { user: user });
 })
 
-app.listen(3000);
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
