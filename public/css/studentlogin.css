@@ -1,0 +1,461 @@
+/*
+
+*/ /* General glassmorphism styling for body */
+
+body {
+
+  background-color: #0e3128; /* Your original background color */
+
+  font-family: "Poppins", sans-serif;
+
+  /* Create a vibrant background for the glass effect to be visible */
+
+  position: relative;
+
+  overflow: auto;
+
+}
+
+
+
+/* Optional: Add a subtle background animation or shapes for depth */
+
+body::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: -20%;
+
+  left: -20%;
+
+  width: 100%;
+
+  height: 100%;
+
+  /* background: radial-gradient(circle at 75% 25%, #c5f255, transparent 50%),
+
+    radial-gradient(circle at 25% 75%, #31a562, transparent 50%); */
+
+  /* animation: moveBackground 20s linear infinite; */
+
+  z-index: -1;
+
+}
+
+
+
+@keyframes moveBackground {
+
+  0% {
+
+    transform: scale(1.1) rotate(0deg);
+
+  }
+
+  50% {
+
+    transform: scale(1.2) rotate(180deg);
+
+  }
+
+  100% {
+
+    transform: scale(1.1) rotate(360deg);
+
+  }
+
+}
+
+
+
+/* --- Core Glassmorphism Components --- */
+
+/* The top navigation bar */
+
+.top-nav {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter, more subtle border */
+
+  background: white; /* Semi-transparent white */
+
+  backdrop-filter: blur(10px); /* The key glassmorphism effect */
+
+  -webkit-backdrop-filter: blur(10px);
+
+  margin: 20px;
+
+  border-radius: 50px;
+
+  position: sticky;
+
+  top: 20px; /* Adjust top position for better floating effect */
+
+  z-index: 1000;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
+
+
+
+/* The search input field */
+
+.search-box {
+
+  padding: 12px 20px;
+
+  width: 50%;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle, frosted border */
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(5px);
+
+  -webkit-backdrop-filter: blur(5px);
+
+  font-size: 16px;
+
+  text-align: center;
+
+  color: white; /* Change text color for better contrast */
+
+  transition: background 0.3s ease;
+
+}
+
+
+
+.search-box:focus {
+
+  background: rgba(255, 255, 255, 0.2);
+
+  outline: none;
+
+  box-shadow: 0 0 10px rgba(197, 242, 85, 0.5); /* Highlight on focus */
+
+}
+
+
+
+.search-box::placeholder {
+
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+
+/* Individual Card */
+
+.custom-card {
+
+  background: rgba(
+
+    255,
+
+    255,
+
+    255,
+
+    0.05
+
+  ); /* Very light, semi-transparent background */
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(12px); /* Stronger blur for cards */
+
+  -webkit-backdrop-filter: blur(12px);
+
+  width: 320px;
+
+  height: 420px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  position: relative;
+
+  color: white; /* Ensure text is visible on the dark background */
+
+}
+
+
+
+.custom-card:hover {
+
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* Styling for card-specific elements */
+
+.card-title h5 {
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #c5f255;
+
+  background: rgba(197, 242, 85, 0.2); /* Semi-transparent accent color */
+
+  border: 1px solid rgba(197, 242, 85, 0.3);
+
+  backdrop-filter: blur(5px);
+
+  display: inline-block;
+
+  padding: 8px 16px;
+
+  border-radius: 12px;
+
+  margin: 15px 0;
+
+  transition: transform 0.2s ease, background 0.3s;
+
+}
+
+
+
+.card-title h5:hover {
+
+  transform: scale(1.05);
+
+  background: rgba(197, 242, 85, 0.4);
+
+}
+
+
+
+/* Button styles to match the theme */
+
+.btn-join {
+
+  background: rgba(14, 49, 40, 0.7); /* Darker, semi-transparent base */
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: white;
+
+  padding: 8px 20px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: background-color 0.3s, transform 0.2s;
+
+}
+
+
+
+.btn-join:hover {
+
+  background: rgba(20, 92, 71, 0.9);
+
+  transform: translateY(-2px);
+
+}
+
+
+
+.btn-info-custom {
+
+  background: rgba(197, 242, 85, 0.7);
+
+  border: 1px solid rgba(197, 242, 85, 0.5);
+
+  color: #0e3128;
+
+  padding: 8px 20px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+
+}
+
+
+
+.btn-info-custom:hover {
+
+  background: rgba(0, 0, 0, 0.8);
+
+  color: white;
+
+  transform: translateY(-2px);
+
+}
+
+
+
+/* Remaining original styles */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.nav-bar-logo-img {
+
+  height: 50px;
+
+  width: 50px;
+
+}
+
+
+
+.middle-btns {
+
+  display: flex;
+
+
+  gap: 80px;
+  color: black;
+
+}
+
+
+
+.nav-btn {
+
+  font-size: 22px;
+
+  color: black; /* Changed color for visibility */
+
+  transition: color 0.3s;
+
+}
+
+
+
+.nav-btn:hover {
+
+  color: white;
+
+}
+
+
+
+.login-btn {
+
+  background-color: #c5f255;
+
+  border-radius: 50px;
+
+  width: 150px;
+
+  color: #0e3128;
+
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+
+
+.login-btn:hover {
+
+  background-color: black;
+
+  color: white;
+
+}
+
+
+
+.search-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 30px 0;
+
+}
+
+
+
+.cards-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  gap: 1rem;
+  /* padding-left: 15px; */
+  margin: 30px;
+  
+
+}
+
+/* Cards Container */
+
+
+
+.custom-card img {
+
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  border-top-left-radius: 16px;
+
+  border-top-right-radius: 16px;
+
+}
+
+
+
+.card-body {
+
+  margin-top: auto;
+
+  padding-bottom: 20px;
+  
+
+}
